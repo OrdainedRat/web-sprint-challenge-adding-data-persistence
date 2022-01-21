@@ -5,7 +5,7 @@ async function getProjects() {
     const rows = await db('projects')
     
     rows.forEach(row => {
-        return row.project_completed = !! row.project_completed
+        return row.project_completed = !!row.project_completed
     })
 
     return rows
